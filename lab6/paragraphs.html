@@ -1,0 +1,29 @@
+<!doctype html>
+<html land="en">
+<head>
+    <meta charset="utf-8">
+    <title></title>
+</head>
+
+<body>
+    <p>Uno</p>
+    <p>Dos</p>
+    <p>Tres</p>
+    <script>
+        var paragraphs = document.body.getElementsByTagName("p");
+        document.body.insertBefore(paragraphs[1], paragraphs[0]);
+        //a taglesss text createTextNode
+        //var newPara = document.createTextNode("A Jedi does not enjoy being molested");
+        //document.body.appendChild(newPara);
+
+        //real Stuff
+      //  var newPara = document.createElement("p");
+    //    var text = document.createTextNode("A jedi craves not these things");
+      //  newPara.appendChild(text);
+      //  document.body.appendChild(newPara);
+        var ang = document.createTextNode("Agression");
+        document.body.replaceChild(ang,paragraphs[1]);
+
+    </script>
+</body>
+</html>
